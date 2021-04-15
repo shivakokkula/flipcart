@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      text-align: center;
+    }
+    h1{
+      margin: 2%;
+      padding-top: 100px;
+      color:chocolate;
+    }
+    #login{
+      margin: 4%;
+      border: 1px solid black;
+      width: fit-content;
+      padding: 4%;
+      font-size: 18px;
+      line-height: 250%;
+      background-color: cadetblue;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 15px;
+    }
+    input{
+      font-size: 18px;
+      border-radius: 15px;
+    }
+    a{
+      background-color: rgb(11, 184, 63);
+      padding: 1%;
+      text-decoration: none;
+      color: black;
+      border-radius: 10px;
+      border:1px solid black ;
+    }
+    a:hover{
+      background-color: rgb(188, 231, 71);
+    }
+  </style>
+</head>
+<body>
+<h1 id="loghead">WELCOME</h1>
+<form id="login" action="php/login.php" method="POST">
+    <input name="email" type="text" placeholder="Enter Email or Mobile" required /><br/>
+    <input name="password" type="password" placeholder="Enter Password" required /><br/>
+    <input type="submit" name='submit' value="LOGIN">
+    <p><div>New User!</div><a href="register.html"> Register </a></p>
+</form>
+    <script src="js/index.js"></script>
+</body>
+</html>

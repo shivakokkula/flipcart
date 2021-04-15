@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body{
+    text-align: center;
+  }
+  h1{
+    margin: 2%;
+    padding-top: 100px;
+    color:chocolate;
+  }
+  #login{
+    margin: 4%;
+    border: 1px solid black;
+    width: 25%;
+    padding: 4%;
+    font-size: 18px;
+    line-height: 250%;
+    background-color: cadetblue;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+  input{
+    font-size: 18px;
+    border-radius: 15px;
+  }
+</style>
+</head>
+<body>
+<h1 id="loghead">WELCOME</h1>
+<form id="login" action="php/login.php" method="POST">
+    <input name="name" type="text" placeholder="Enter Name" required />
+    <input name="email" type="text" placeholder="Enter Email" required />
+    <input name="mobile" type="text" placeholder="Enter Mobile" required />
+    <input name="password" type="password" placeholder="Enter Password" required />
+    <input type="submit" name='submit' value="REGISTER">
+</form>
+    <script src="js/index.js"></script>
+</body>
+</html>
